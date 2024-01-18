@@ -1,6 +1,8 @@
 import 'package:chatapp/components/TextField_Editor.dart';
 import 'package:flutter/material.dart';
 
+//TODO : BUTTON PAGE || REGISTRATION TEXT BUTTON || AUTHENTICATION
+
 class LoginPage extends StatefulWidget {
   LoginPage({super.key});
 
@@ -62,7 +64,8 @@ class _LoginPageState extends State<LoginPage> {
               hintText: "Password",
               obscureText: true,
               controller: passwordController,
-            )
+            ),
+
             //* REGISTRATION
           ],
         ),
