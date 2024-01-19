@@ -1,10 +1,13 @@
+// ignore_for_file: file_names
+
+import 'package:chatapp/components/CustomButton.dart';
 import 'package:chatapp/components/TextField_Editor.dart';
 import 'package:flutter/material.dart';
 
 //TODO : BUTTON PAGE || REGISTRATION TEXT BUTTON || AUTHENTICATION
 
 class LoginPage extends StatefulWidget {
-  LoginPage({super.key});
+  const LoginPage({super.key});
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -13,6 +16,10 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
+
+  //TODO LOGIN METHOD
+
+  void login() {}
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +28,7 @@ class _LoginPageState extends State<LoginPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            //! LOGO
+            //* LOGO
 
             Icon(
               Icons.message,
@@ -33,7 +40,7 @@ class _LoginPageState extends State<LoginPage> {
               height: 20,
             ),
 
-            //! TEXT
+            //* TEXT
 
             Text(
               "Welcome Back",
@@ -60,13 +67,46 @@ class _LoginPageState extends State<LoginPage> {
             ),
 
             //* PW TEXT FIELD
+
             CustomTextField(
               hintText: "Password",
               obscureText: true,
               controller: passwordController,
             ),
 
-            //* REGISTRATION
+            //* LOGIN BUTTON
+
+            const SizedBox(
+              height: 20,
+            ),
+
+            CustomButton(
+              ButtonText: "Login",
+              ontap: login,
+            ),
+
+            //* REGISTRATION BUTTON
+
+            const SizedBox(
+              height: 10,
+            ),
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "Not a member ? ",
+                  style:
+                      TextStyle(color: Theme.of(context).colorScheme.primary),
+                ),
+                Text(
+                  "Register now",
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Theme.of(context).colorScheme.primary),
+                ),
+              ],
+            )
           ],
         ),
       ),
