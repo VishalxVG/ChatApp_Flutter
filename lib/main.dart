@@ -1,4 +1,5 @@
 import 'package:chatapp/pages/loginPage.dart';
+import 'package:chatapp/pages/registerPage.dart';
 import 'package:chatapp/themes/light_Mode.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Minimal Chat App',
       debugShowCheckedModeBanner: false,
       theme: lightMode,
-      home: LoginPage(),
+      home: RegisterPage(),
     );
   }
 }
