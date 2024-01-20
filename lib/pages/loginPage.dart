@@ -1,4 +1,4 @@
-// ignore_for_file: file_names
+// ignore_for_file: file_names, use_build_context_synchronously
 
 import 'package:chatapp/auth/auth_services.dart';
 import 'package:chatapp/components/CustomButton.dart';
@@ -23,17 +23,19 @@ class LoginPage extends StatelessWidget {
     try {
       await authService.signInWithEmailPassword(
           emailController.text, passwordController.text);
-    } catch (e) {
+    }
+    // catch errors
+    catch (e) {
       showDialog(
-          context: context,
-          builder: (context) => AlertDialog(
-                title: Text(
-                  e.toString(),
-                ),
-              ));
+        context: context,
+        builder: (context) => AlertDialog(
+          title: Text(
+            e.toString(),
+          ),
+        ),
+      );
     }
   }
-  // catch errors
 
   @override
   Widget build(BuildContext context) {
@@ -97,7 +99,7 @@ class LoginPage extends StatelessWidget {
 
             CustomButton(
               ButtonText: "Login",
-              ontap: login,
+              ontap: () => login(context),
             ),
 
             //* REGISTRATION BUTTON

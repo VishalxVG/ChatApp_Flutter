@@ -1,3 +1,6 @@
+// ignore_for_file: no_leading_underscores_for_local_identifiers
+
+import 'package:chatapp/auth/auth_services.dart';
 import 'package:chatapp/components/CustomButton.dart';
 import 'package:chatapp/components/TextField_Editor.dart';
 import 'package:flutter/material.dart';
@@ -11,7 +14,42 @@ class RegisterPage extends StatelessWidget {
 
   RegisterPage({super.key, this.onTap});
 
-  void register() {}
+  void register(BuildContext context) {
+    // auth service
+
+    final _auth = AuthService();
+
+    // password match -> create user
+
+    if (passwordController.text == confirmPasswordController.text) {
+      try {
+        _auth.signUpWithEmailPassword(
+            emailController.text, passwordController.text);
+      } catch (e) {
+        showDialog(
+          context: context,
+          builder: (context) => AlertDialog(
+            title: Text(
+              e.toString(),
+            ),
+          ),
+        );
+      }
+    }
+
+    // password donot match -> give error
+
+    else {
+      showDialog(
+        context: context,
+        builder: (context) => const AlertDialog(
+          title: Text(
+            "Password Doesnot Match",
+          ),
+        ),
+      );
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -87,7 +125,7 @@ class RegisterPage extends StatelessWidget {
 
             CustomButton(
               ButtonText: "Register",
-              ontap: register,
+              ontap: () => register(context),
             ),
 
             //* LOGIN BUTTON
