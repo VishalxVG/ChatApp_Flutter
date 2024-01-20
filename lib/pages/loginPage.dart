@@ -4,22 +4,16 @@ import 'package:chatapp/components/CustomButton.dart';
 import 'package:chatapp/components/TextField_Editor.dart';
 import 'package:flutter/material.dart';
 
-//TODO : BUTTON PAGE || REGISTRATION TEXT BUTTON || AUTHENTICATION
+class LoginPage extends StatelessWidget {
+  LoginPage({super.key, this.onTap});
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
-
-  @override
-  State<LoginPage> createState() => _LoginPageState();
-}
-
-class _LoginPageState extends State<LoginPage> {
   final TextEditingController emailController = TextEditingController();
+
   final TextEditingController passwordController = TextEditingController();
-
-  //TODO LOGIN METHOD
-
   void login() {}
+
+  final void Function()? onTap;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -99,11 +93,14 @@ class _LoginPageState extends State<LoginPage> {
                   style:
                       TextStyle(color: Theme.of(context).colorScheme.primary),
                 ),
-                Text(
-                  "Register now",
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Theme.of(context).colorScheme.primary),
+                GestureDetector(
+                  onTap: onTap,
+                  child: Text(
+                    "Register now",
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Theme.of(context).colorScheme.primary),
+                  ),
                 ),
               ],
             )
