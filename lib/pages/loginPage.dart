@@ -1,18 +1,39 @@
 // ignore_for_file: file_names
 
+import 'package:chatapp/auth/auth_services.dart';
 import 'package:chatapp/components/CustomButton.dart';
 import 'package:chatapp/components/TextField_Editor.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
+  final void Function()? onTap;
   LoginPage({super.key, this.onTap});
 
   final TextEditingController emailController = TextEditingController();
 
   final TextEditingController passwordController = TextEditingController();
-  void login() {}
 
-  final void Function()? onTap;
+  void login(BuildContext context) async {
+    // auth services
+
+    final authService = AuthService();
+
+    // try login
+
+    try {
+      await authService.signInWithEmailPassword(
+          emailController.text, passwordController.text);
+    } catch (e) {
+      showDialog(
+          context: context,
+          builder: (context) => AlertDialog(
+                title: Text(
+                  e.toString(),
+                ),
+              ));
+    }
+  }
+  // catch errors
 
   @override
   Widget build(BuildContext context) {
