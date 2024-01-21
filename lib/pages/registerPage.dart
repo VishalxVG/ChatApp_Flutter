@@ -1,6 +1,6 @@
 // ignore_for_file: no_leading_underscores_for_local_identifiers
 
-import 'package:chatapp/auth/auth_services.dart';
+import 'package:chatapp/services/auth/auth_services.dart';
 import 'package:chatapp/components/CustomButton.dart';
 import 'package:chatapp/components/TextField_Editor.dart';
 import 'package:flutter/material.dart';

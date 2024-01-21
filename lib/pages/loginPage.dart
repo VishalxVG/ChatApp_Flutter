@@ -1,6 +1,6 @@
 // ignore_for_file: file_names, use_build_context_synchronously
 
-import 'package:chatapp/auth/auth_services.dart';
+import 'package:chatapp/services/auth/auth_services.dart';
 import 'package:chatapp/components/CustomButton.dart';
 import 'package:chatapp/components/TextField_Editor.dart';
 import 'package:flutter/material.dart';
