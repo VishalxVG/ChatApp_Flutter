@@ -4,6 +4,7 @@ import 'package:chatapp/services/auth/auth_services.dart';
 import 'package:chatapp/components/CustomButton.dart';
 import 'package:chatapp/components/TextField_Editor.dart';
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class LoginPage extends StatelessWidget {
   final void Function()? onTap;
@@ -47,10 +48,8 @@ class LoginPage extends StatelessWidget {
           children: [
             //* LOGO
 
-            Icon(
-              Icons.message,
-              size: 60,
-              color: Theme.of(context).colorScheme.primary,
+            Lottie.asset(
+              "assets/animation/animation1.json",
             ),
 
             const SizedBox(
