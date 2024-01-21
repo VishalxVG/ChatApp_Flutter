@@ -53,8 +53,9 @@ class HomePage extends StatelessWidget {
   Widget _buildUserListItem(
       Map<String, dynamic> userData, BuildContext context) {
     // display all user except current user
-
-    if (userData["email"] != _authService.getCurrentUser()!.email) {
+    final currentUser = _authService.getCurrentUser();
+    if (currentUser != null &&
+        userData["email"]?.toLowerCase() != currentUser.email?.toLowerCase()) {
       return UserTile(
         text: userData["email"],
         ontap: () {

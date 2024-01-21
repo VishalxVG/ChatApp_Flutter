@@ -1,6 +1,6 @@
 import 'package:chatapp/services/auth/auth_gate.dart';
 import 'package:chatapp/firebase_options.dart';
-import 'package:chatapp/themes/light_Mode.dart';
+
 import 'package:chatapp/themes/themeProvide.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -28,5 +28,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-//TODO : 
