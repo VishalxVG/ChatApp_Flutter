@@ -19,10 +19,9 @@ class HomePage extends StatelessWidget {
         title: const Text("Home"),
         actions: [
           // logout button
-
           IconButton(onPressed: logout, icon: const Icon(Icons.logout))
         ],
-      ),
+       ),
     );
   }
 }
