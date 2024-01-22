@@ -14,8 +14,8 @@
 | ![LoginPage](https://github.com/VishalxVG/ChatApp_Flutter/blob/main/assets/app%20demo/Screenshot%202024-01-22%20163519.png) | ![SignUpPage](https://github.com/VishalxVG/ChatApp_Flutter/blob/main/assets/app%20demo/Screenshot%202024-01-22%20163534.png) |
 | --- | --- |
 | Login Page  | Sign Up Page  |
-| ![HomePage]() | ![HomePage1](https://github.com/VishalxVG/ChatApp_Flutter/blob/main/assets/app%20demo/Screenshot%202024-01-22%20163609.png) |
-| Home Page  | Home Page  |
+|![SettingsPage](https://github.com/VishalxVG/ChatApp_Flutter/blob/main/assets/app%20demo/Screenshot%202024-01-22%20163644.png) | ![HomePage1](https://github.com/VishalxVG/ChatApp_Flutter/blob/main/assets/app%20demo/Screenshot%202024-01-22%20163609.png) |
+| Settings Page  | Home Page  |
 | ![DrawerPage](https://github.com/VishalxVG/ChatApp_Flutter/blob/main/assets/app%20demo/Screenshot%202024-01-22%20164449.png) | ![ChatPage](https://github.com/VishalxVG/ChatApp_Flutter/blob/main/assets/app%20demo/Screenshot%202024-01-22%20163626.png)|
-| Drawer Page  |Download Page |
-|![SettingsPage](https://github.com/VishalxVG/ChatApp_Flutter/blob/main/assets/app%20demo/Screenshot%202024-01-22%20163644.png) |
+| Drawer Page  |
+
