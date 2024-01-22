@@ -1,7 +1,6 @@
 import 'package:chatapp/services/auth/auth_services.dart';
 import 'package:chatapp/pages/settingsPage.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
@@ -27,7 +26,11 @@ class CustomDrawer extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               DrawerHeader(
-                child: Image.asset("assets/images/message.png"),
+                child: Image.asset(
+                  "assets/images/message.png",
+                  height: 70,
+                  width: 70,
+                ),
               ),
 
               // home list tile
