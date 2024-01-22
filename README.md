@@ -1,16 +1,21 @@
-# chatapp
+# ChatApp
 
-A new Flutter project.
+# Project Bio : 
+ It is chat application where user can send message to another user that is also using the same app . It only has one on one conversation facilities .It can also toggle between light and dark mode , that is available in the settings page. 
 
-## Getting Started
+ **Technology Stack:**
 
-This project is a starting point for a Flutter application.
+- **Flutter:** The cross-platform Flutter framework is the foundation of the application, enabling it to run seamlessly on both Android and iOS devices.
 
-A few resources to get you started if this is your first Flutter project:
+- **Firebase:** Firebase serves as the backend for user authentication, data storage, and real-time updates, enhancing the app's performance and reliability.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+**APP DEMO**
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+| ![LoginPage](https://github.com/VishalxVG/ChatApp_Flutter/blob/main/assets/app%20demo/Screenshot%202024-01-22%20163519.png) | ![SignUpPage](https://github.com/VishalxVG/ChatApp_Flutter/blob/main/assets/app%20demo/Screenshot%202024-01-22%20163534.png) |
+| --- | --- |
+| Login Page  | Sign Up Page  |
+| ![HomePage]() | ![HomePage1](https://github.com/VishalxVG/ChatApp_Flutter/blob/main/assets/app%20demo/Screenshot%202024-01-22%20163609.png) |
+| Home Page  | Home Page  |
+| ![DrawerPage](https://github.com/VishalxVG/ChatApp_Flutter/blob/main/assets/app%20demo/Screenshot%202024-01-22%20164449.png) | ![ChatPage](https://github.com/VishalxVG/ChatApp_Flutter/blob/main/assets/app%20demo/Screenshot%202024-01-22%20163626.png)|
+| Drawer Page  |Download Page |
+|![SettingsPage](https://github.com/VishalxVG/ChatApp_Flutter/blob/main/assets/app%20demo/Screenshot%202024-01-22%20163644.png) |
